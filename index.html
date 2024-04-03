@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <header>
@@ -54,8 +54,33 @@
                 </article>
             </div>
     </section>
-    <section aria-label="Contact" id="contact">
-        <h2>Contact Form</h2>
+    <section aria-label="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formsubmit.co/sonamkrtchyan2711@gmail.com" method="post">
+            <label for="name">Name</label>
+            <input 
+            id="name" 
+            name="Name" 
+            placeholder="ex. Sona" 
+            required minlength="2"/>
+            <label for="email">Email</label>
+            <input 
+            id="email" 
+            name="Email" 
+            placeholder="sona2022@gmail.com"
+            required
+            pattern="/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g"/>
+            <label for="message">Message</label>
+            <textarea
+             id="message" 
+             name="message"
+             placeholder="Enter your message..." 
+             minlength="10"
+             maxlength="200"
+             required>
+            </textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 </body>
 </html>
