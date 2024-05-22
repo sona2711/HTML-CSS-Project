@@ -1,0 +1,116 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+:root {
+    --purple100: #f3e8ff;
+    --purple200: #e9d5ff;
+    --purple300: #d8b4fe;
+    --purple400: #c084fc;
+    --purple500: #a855f7;
+    --purple600: #9333ea;
+    --purple700: #7e22ce;
+    --purple800: #6b21a8;
+    --purple900: #581c87;
+    --purple950: #3b0764;
+    --black: #000;
+}
+
+/* reset */
+* {
+    box-sizing: border-box;
+    color: var(--purple200);
+}
+
+body, p, h1, h2, h3 {
+    margin: 0;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 400;
+    
+}
+a {
+    text-decoration: none;
+}
+
+
+/* Selection styles */
+body {
+    background-color: var(--black); 
+}
+
+header {
+    width: 100%;
+    min-height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+/* Navigation */
+.nav-bar {
+    padding: 1rem;
+    width: 100%;
+    background: linear-gradient(217deg, var(--purple950), var(--purple700), var(--black));
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-link {
+    transition: font-weight 0.1s ease-in-out;
+    
+    &:hover {
+        font-weight: 600;
+        color: var(--purple100);
+    }
+}
+
+/* Main */
+main {
+    padding-top: 2rem;
+}
+
+/* Hero section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.hero-info {
+    padding: 0 2rem;
+}
+
+.hero-img-container {
+    max-width: 30vw;
+}
+
+.hero-img {
+    max-width: 100%;
+}
+
+.cta {
+    border-radius: 5px;
+    text-align: center;
+    transition: font-weight 0.1s ease-in-out;
+}
+
+.cta-primary {
+    display:block;
+    width: 200px;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--purple700);
+
+    &:hover {
+        font-weight: 600;
+        background-color: var(--purple300);
+        color: var(--purple700);
+    }
+}
