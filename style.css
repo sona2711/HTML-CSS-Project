@@ -38,14 +38,20 @@ body {
 header {
     width: 100%;
     min-height: 4rem;
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
+.section {
+    padding: 20px 0;
+}
+.section-title {
+    font-size: 2rem;
+}
 
 /* Navigation */
 .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
     padding: 1rem;
     width: 100%;
     background: linear-gradient(217deg, var(--purple950), var(--purple700), var(--black));
@@ -71,20 +77,28 @@ header {
 
 /* Main */
 main {
-    padding-top: 2rem;
+    max-width: 1200px;
+    padding: 2rem 16px 16px ;
+    margin: 0 auto;
+    
 }
 
 /* Hero section */
 .hero-section {
     display: flex;
     justify-content: space-between;
+    align-items: center ;
     gap: 1rem;
     align-items: center;
     min-height: 50vh;
 }
 
-.hero-info {
-    padding: 0 2rem;
+.hero-title {
+    font-size: 2.5rem;
+
+    @media screen  and (max-width: 768px){
+        font-size: 1.5rem;
+    }
 }
 
 .hero-img-container {
@@ -93,8 +107,14 @@ main {
 
 .hero-img {
     max-width: 100%;
+    border-radius: 25% 1%;
+
+    @media screen  and (max-width: 768px){
+        display: none;
+    }
 }
 
+/* call to action */
 .cta {
     border-radius: 5px;
     text-align: center;
@@ -113,4 +133,53 @@ main {
         background-color: var(--purple300);
         color: var(--purple700);
     }
+}
+
+
+/* About section */
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* .about-img {
+    @media screen  and (max-width: 768px){
+        display: none;
+    }
+} */
+
+
+/* Services section */
+.services-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 25px;
+
+
+    @media screen  and (max-width: 768px){
+        display: block;
+    }
+}
+
+.services-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 3px solid var(--purple600);
+    border-radius: 25% 1%;
+
+    @media screen  and (max-width: 768px){
+        margin: 10px;
+    }
+}
+
+.services-subtitle {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
 }
